@@ -4,10 +4,17 @@ import './style.css';
 const Post = props => (
   <div className="card">
     <div className="container">
-      <h4>
-        <b>John Doe</b>
-      </h4>
-      <p>Architect & Engineer</p>
+      <div className="floated">
+        <img src={props.image} />
+      </div>
+      <br />
+      <br />
+      <div className="floated">{props.name}</div>
+      <br />
+      <div className="floated">{props.time}</div>
+      <div className="clear" />
+      <hr />
+      {props.text}
     </div>
   </div>
 );

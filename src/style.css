@@ -1,6 +1,10 @@
 body {
   margin: 0;
   background-color: #e9ebee;
+  font-family: inherit;
+  font-size: 14px;
+  color: #a5a9af;
+  font-weight: bold;
 }
 .header {
   background-color: #4267b2;
@@ -17,10 +21,30 @@ body {
   margin-top: 15px;
   margin-left: 350px;
   margin-right: 350px;
+  padding: 20px;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .container {
   padding: 2px 16px;
+}
+hr {
+  border-top: 1px #eee;
+}
+img {
+  border-radius: 50px;
+  height: 80px;
+  padding: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+label {
+  padding-left: 10px;
+}
+div.floated {
+  float: left;
+}
+.clear {
+  clear: both;
 }
