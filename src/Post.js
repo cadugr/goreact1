@@ -1,21 +1,12 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import './style.css';
+import PostHeader from './PostHeader';
 
-const Post = props => (
+const Post = ({ post }) => (
   <div className="card">
-    <div className="container">
-      <div className="floated">
-        <img src={props.image} />
-      </div>
-      <br />
-      <br />
-      <div className="floated">{props.name}</div>
-      <br />
-      <div className="floated">{props.time}</div>
-      <div className="clear" />
-      <hr />
-      {props.text}
-    </div>
+    <PostHeader post={post} />
+    <div className="text">{post.text}</div>
   </div>
 );
 
